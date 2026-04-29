@@ -1,0 +1,105 @@
+.footer {
+  background: #0f172a;
+  border-top: 1px solid rgba(255,255,255,.06);
+  margin-top: auto;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer__brand-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer__brand-desc {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer__col-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-bottom: 14px;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__list li {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Bottom bar */
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 18px 24px;
+}
+
+.footer__bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__author {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.footer__author-link {
+  color: #a5b4fc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .15s;
+}
+.footer__author-link:hover { color: #c7d2fe; text-decoration: underline; }
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(255,255,255,.07);
+  color: #94a3b8;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: background .15s, color .15s;
+}
+.footer__social-btn:hover { background: rgba(255,255,255,.12); color: #fff; text-decoration: none; }
+.footer__social-btn--linkedin:hover { background: rgba(10,102,194,.2); color: #60a5fa; }
+
+@media (max-width: 700px) {
+  .footer__inner { grid-template-columns: 1fr; gap: 28px; padding: 32px 16px 24px; }
+  .footer__bottom-inner { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notification-service
+
+server:
+  port: 8084
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    com.ecommerce.notification: INFO

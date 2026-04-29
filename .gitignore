@@ -1,0 +1,56 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+mvnw
+mvnw.cmd
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot
+*.log
+spring.log
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.production
+application-local.yml
+application-secrets.yml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# React Build
+frontend/build/
+frontend/.env.local
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
